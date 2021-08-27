@@ -1,8 +1,9 @@
-# hrep
+# href
 
-this program will find all the link with a spesfic __Regex__ pattern from a site.
+### this program will find all the link with a spesfic __Regex__ pattern from a site.
 
 
+all the finded url's have some special charater's, so the Regex pattern will try to match with finded url, if match, the url will return, if not match, try for next url.
 
 
 usage:
