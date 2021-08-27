@@ -15,4 +15,6 @@ def GetAllTags(url: str, pattern: str):
             if(re.search(f'{pattern}', i['href'])):
                 print(re.search(f'{pattern}', i['href']).string)
 
-
+url = input('url: ')
+pattern = input('regex pattern(case sensitive): ')
+GetAllTags(url, pattern)
