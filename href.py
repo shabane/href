@@ -3,7 +3,20 @@
 import requests
 from bs4 import BeautifulSoup as bs
 import re
+import argparse
 
+# creating CLI
+parser = argparse.ArgumentParser()
+parser.add_argument('-u', '--url', type=str, required=True, help='the url of the page')
+parser.add_argument('-p', '--pattern', type=str, required=True, help='regex pattern(case sensitive)')
+
+args = parser.parse_args()
+
+url = args.url
+pattern = args.pattern
+
+
+# finding the all tag a and link's
 def GetAllTags(url: str, pattern: str):
     site = requests.get(url)
     if(site.status_code != 200):
@@ -15,6 +28,4 @@ def GetAllTags(url: str, pattern: str):
             if(re.search(f'{pattern}', i['href'])):
                 print(re.search(f'{pattern}', i['href']).string)
 
-url = input('url: ')
-pattern = input('regex pattern(case sensitive): ')
 GetAllTags(url, pattern)
