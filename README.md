@@ -12,7 +12,7 @@ usage:
 	
 example:
 
-	`href.py --url 'https://example.com/songs/tylor_swift/index.html' --pattern '.*mp3.*'`
+	`href.py --url 'https://guitarmusic.ir/hayedeh-songs/' --pattern '.*mp3.*'`
 
 
 ### how to use:
