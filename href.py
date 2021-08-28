@@ -25,7 +25,7 @@ def GetAllTags(url: str, pattern: str):
         site = bs(site.content, 'html.parser')
         site = site.find_all('a')
         for i in site:
-            if(re.search(f'{pattern}', i['href'])):
-                print(re.search(f'{pattern}', i['href']).string)
+            if(re.search(f'{pattern}', i['href'], re.IGNORECASE)):
+                print(re.search(f'{pattern}', i['href'], re.IGNORECASE).string)
 
 GetAllTags(url, pattern)
