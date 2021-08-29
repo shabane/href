@@ -8,13 +8,15 @@ import argparse
 # creating CLI
 parser = argparse.ArgumentParser()
 parser.add_argument('-u', '--url', type=str, required=True, help='the url of the page')
-parser.add_argument('-p', '--pattern', type=str, required=True, help='regex pattern(case sensitive)')
+parser.add_argument('-p', '--pattern', type=str, required=False, help='regex pattern(case sensitive)')
 
 args = parser.parse_args()
 
 url = args.url
-pattern = args.pattern
 
+pattern = args.pattern
+if(pattern == None):
+    pattern = '.*'
 
 # finding the all tag a and link's
 def GetAllTags(url: str, pattern: str):
