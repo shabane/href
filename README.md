@@ -20,13 +20,18 @@ and the last thing is that the program is __case-insensitive__
 ### how to use
 
 __usage__:
-        `--url` 'the url of site'
-        `--pattern` 'Regex pattern'
-        `--load-headers` path header file
-        ```href.py --url 'URL' --pattern 'RegegPattern' --load-headers ./headers```
+
+        --url 'the url of site'
+
+        --pattern 'Regex pattern'
+
+        --load-headers` path header file
+
+        href.py --url 'URL' --pattern 'RegegPattern' --load-headers ./headers
 
 __example__:
-        ```href.py --url 'https://guitarmusic.ir/hayedeh-songs/' --pattern '.*mp3.*'```
+
+        href.py --url 'https://guitarmusic.ir/hayedeh-songs/' --pattern '.*mp3.*'
 
 ### example:
 ![href](https://s4.uupload.ir/files/ezgif.com-gif-maker_6tmk.gif)
