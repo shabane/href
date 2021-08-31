@@ -19,14 +19,14 @@ and the last thing is that the program is __case-insensitive__
 
 ### how to use
 
-usage:
+__usage__:
+        `--url` 'the url of site'
+        `--pattern` 'Regex pattern'
+        `--load-headers` path header file
+        ```href.py --url 'URL' --pattern 'RegegPattern' --load-headers ./headers```
 
-        ` href.py --url URL --pattern RegegPattern `
-
-example:
-
-        ` href.py --url 'https://guitarmusic.ir/hayedeh-songs/' --pattern '.*mp3.*' `
-
+__example__:
+        ```href.py --url 'https://guitarmusic.ir/hayedeh-songs/' --pattern '.*mp3.*'```
 
 ### example:
 ![href](https://s4.uupload.ir/files/ezgif.com-gif-maker_6tmk.gif)
@@ -37,10 +37,14 @@ example:
 
 ### note:
 
-1. all the switch have a small way to use,
+1. __all the switch have a small way to use__
+> `--help`: `-h`
+>
 > `--url`: `-u`
 >
 > `--pattern`: `-p`
+>
+> `--load-headers`: `-l`
 
 2. __use pipe__
 > to use the program some time you need to pipe or redirect the result
@@ -55,5 +59,8 @@ do it by this command: `ln -s href.py ~/.local/bin/href`
 >
 > and do not forget to make it __executable__
 
+4. __headers__
+> if you got any _http status code_ try to use a the header of site, or use the default header in the directory
+> by this switch `--load-header [file]`
 
 
