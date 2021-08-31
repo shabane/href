@@ -65,7 +65,7 @@ do it by this command: `ln -s href.py ~/.local/bin/href`
 > and do not forget to make it __executable__
 
 4. __headers__
-> if you got any _http status code_ try to use a the header of site, or use the default header in the directory
+> if you got __4xx__ or __5xx__ _http status code_ try to use a __http header__, or use the default header in the directory
 > by this switch `--load-header [file]`
 
 
