@@ -59,7 +59,7 @@ __example__:
 > and for having the link in a text file, you should redirect the result to a file. `href.py -u "URL" -p "patternt" > links.txt`
 
 3. __run easy__
-> to run the program witch oud cd to the source dir or wite the full path every time, you can _link_ it to your `~/<user>/.local/bin/href`
+> to run the program with out cd to the source dir or wite the full path each time, you can _link_ it to your `~/<user>/.local/bin/href`
 do it by this command: `ln -s href.py ~/.local/bin/href`
 >
 > and do not forget to make it __executable__
